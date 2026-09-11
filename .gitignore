@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# NOTE ON data/ and model/:
+# The generated dataset (data/house_prices.csv) and the trained model
+# (model/house_price_model.pkl) are INTENTIONALLY NOT ignored here.
+#
+# Streamlit Community Cloud only runs "app.py" when deploying - it does
+# NOT run generate_dataset.py or train_model.py automatically. If those
+# output files were excluded from GitHub, the deployed app would crash
+# with a "model not found" error.
+#
+# For this beginner-friendly setup, commit data/house_prices.csv and
+# model/house_price_model.pkl to GitHub so the app works immediately
+# after deployment. See README.md for details.
